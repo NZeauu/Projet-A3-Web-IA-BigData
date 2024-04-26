@@ -1,0 +1,18 @@
+body {
+    padding: 1em;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    color: #b9b9b9;
+    background-color: #e3e3e3;
+    background-image: url('../img/predictionFiesta.jpg');
+    background-size: cover;
+    background-position: center top 0px; 
+    background-repeat: no-repeat;
+  }
+
+  #map-container {
+    width: 50%;
+    height: 200px; 
+    margin: 150px auto 0;
+  }
+  

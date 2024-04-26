@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <link rel="stylesheet" type="text/css" href="/css/navbar.css">
+  <link rel="stylesheet" type="text/css" href="/css/prediction-haut-niveau.css">
+  
+  <nav class="navbar">
+    <div class="logo">
+      <img src="/img/logo.png" alt="Logo">
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="ajout.html">Ajout</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn">Visualisation <i class="fa fa-caret-down"></i></a>
+        <div class="dropdown-content">
+          <a href="visualisation-carte.html">Visualisation carte</a>
+          <a href="visualisation-tableau.html">Visualisation Tableau</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn">Prediction <i class="fa fa-caret-down"></i></a>
+        <div class="dropdown-content">
+          <a href="prediction-cluster.html">Prediction cluster</a>
+          <a href="prediction-haut-niveau.html">Prediction haut niveau </a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+  
+</head>
+<body>
+  
+  <div class="container">
+    <div id="button">
+      <a href="visualisation-tableau.html"> <-- Retour</a>
+    </div>
+  
+<div>
+  <table>
+    <thead>
+      <tr>
+        <th>Méthode</th>
+        <th>Multi-Layer Perceptron (MLP)</th>
+        <th>Support Vector Machine (SVM)</th>
+        <th>Random Forest (RF)</th>
+        <th>k-Nearest Neighbors (KNN)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>Prédiction de gravité</th>
+        <td id='mlp'></td>
+        <td id='svm'></td>
+        <td id='rf'></td>
+        <td id='knn'></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div>
+  
+</body>
+
+<!-- include js script prediction-haut-niveau.js -->
+<script src="/js/prediction-haut-niveau.js"></script>
+  
+</html>
+
+
+

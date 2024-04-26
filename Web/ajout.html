@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../css/AjoutTest.css">
+<link rel="stylesheet" type="text/css" href="/css/navbar.css">
+<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+
+</head>
+<nav class="navbar">
+  <div class="logo">
+    <img src="/img/logo.png" alt="Logo">
+  </div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="ajout.html">Ajout</a></li>
+    <li class="dropdown">
+      <a href="#" class="dropbtn">Visualisation <i class="fa fa-caret-down"></i></a>
+      <div class="dropdown-content">
+        <a href="visualisation-carte.html">Visualisation carte</a>
+        <a href="visualisation-tableau.html">Visualisation Tableau</a>
+      </div>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropbtn">Prediction <i class="fa fa-caret-down"></i></a>
+      <div class="dropdown-content">
+        <a href="prediction-cluster.html">Prediction cluster</a>
+        <a href="prediction-haut-niveau.html">Prediction haut niveau </a>
+      </div>
+    </li>
+  </ul>
+</nav>
+<body>
+<div class="container">
+  <form action="visualisation-carte.html" method="POST">
+    <!-- TOP of the form -->
+    <div class="row">
+      <div class="col-half">
+        <h4>Age du conducteur</h4>
+        <input type="text" id="age" name="age">
+      </div>
+      <div class="col-half">
+        <h4>Ville</h4>
+        <input type="text" id="ville" name="ville">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-half">
+        <h4>Latitude et longitude</h4>
+        <div class="input-group">
+          <div class="col-third">
+          <input type="text" id="latitude" name="latitude" placeholder="Latitude">
+        </div>
+          <div class="col-third">
+            <input type="text" id="longitude" name="longitude" placeholder="longitude">
+          </div>
+      </div>
+      </div>
+      <div class="col-half">
+        <h4>Date</h4>
+        <div class="input-group">
+          <div class="col-third">
+            <input type="date" id="day" name="day" placeholder="DD">
+          </div>
+          <div class="col-third">
+            <input type="time" id="month" name="month" placeholder="MM">
+          </div>
+        </div>
+      </div>
+    </div>
+        <!-- BOTTOM OF THE FORM -->
+
+<!-- BOTTOM OF THE FORM -->
+<div class="row">
+  <div class="col-half">
+    <h4>Condition atmosphérique</h4>
+    <div class="input-group">
+      <select id="conditionAtmospherique" name="conditionAtmospherique">
+      </select>
+    </div>
+  </div>
+  <div class="col-half">
+    <h4>Luminosité</h4>
+    <div class="input-group">
+      <select id="luminosite" name="luminosite">
+      </select>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-half">
+    <h4>État de la route</h4>
+    <div class="input-group">
+      <select id="etatRoute" name="etatRoute">
+      </select>
+    </div>
+  </div>
+  <div class="col-half">
+    <h4>Sécurité</h4>
+    <div class="input-group">
+      <select id="securite" name="securite">
+      </select>
+    </div>
+  </div>
+</div>
+<div class="row center-button">
+      <div class="col-half">
+        <button type="submit" id="submitBtn">Envoyer</button>
+      </div>
+    </div>
+</form>
+</body>
+<script src="/js/ajout.js"></script>
+
+</html>

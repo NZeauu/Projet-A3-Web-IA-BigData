@@ -1,0 +1,49 @@
+/* -------------------------------------------ACCUEIL --------------------------------------*/
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.accueil {
+  background-image: url('/img/background_accueil.png');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.accueil-content {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8); 
+  color: black;
+  background-color: rgba(255, 255, 255, 0.8);
+  opacity: 0.8;
+  margin-top: 500px;
+}
+
+.accueil-content h1 {
+  font-size: 60px; /* Augmente la taille du texte h1 */
+  margin-bottom: 20px;
+  font-family: Georgia, serif;
+}
+
+.accueil-content p {
+  font-size: 24px; /* Augmente légèrement la taille du deuxième texte */
+}
+
+button {
+  background-color: transparent;
+  color: black;
+  border: none;
+  padding: 20px 40px; /* Augmente la taille du bouton */
+  font-size: 24px; /* Augmente la taille du texte du bouton */
+  border-radius: 50px; /* Arrondit les bords du bouton */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.3); /* Fond transparent au survol */
+}

@@ -1,0 +1,80 @@
+body {
+    background-image: url("../img/predictionFiesta.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: "Arial", sans-serif;
+  }
+  
+  th {
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  tbody td {
+    padding: 10px;
+  }
+  
+  th:hover {
+    background-color: #9dff9d;
+    cursor: pointer;
+  }
+  
+  td {
+    background-color: #d9ffd9;
+  }
+  
+  td:empty {
+    background-color: #f0f0f0;
+  }
+  
+  #mlp,
+  #svm,
+  #rf,
+  #knn {
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+  }
+
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  
+
+  #button{
+    width: 10em;
+    height: 2em;
+    margin-right: 20em;
+    margin-top: 10em;
+    margin-left: 40%;
+    padding-top: 1em;
+    text-align: center;
+    background-color: green;
+    border-radius: 20px;
+    color: black;
+    order: 1;
+  }
+  
+  table {
+    order: 2;
+  }

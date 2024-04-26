@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../css/visualisation_carte.css">
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<link rel="stylesheet" type="text/css" href="/css/navbar.css">
+<nav class="navbar">
+  <div class="logo">
+    <img src="/img/logo.png" alt="Logo">
+  </div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="ajout.html">Ajout</a></li>
+    <li class="dropdown">
+      <a href="#" class="dropbtn">Visualisation <i class="fa fa-caret-down"></i></a>
+      <div class="dropdown-content">
+        <a href="visualisation-carte.html">Visualisation carte</a>
+        <a href="visualisation-tableau.html">Visualisation Tableau</a>
+      </div>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropbtn">Prediction <i class="fa fa-caret-down"></i></a>
+      <div class="dropdown-content">
+        <a href="prediction-cluster.html">Prediction cluster</a>
+        <a href="prediction-haut-niveau.html">Prediction haut niveau </a>
+      </div>
+    </li>
+  </ul>
+</nav>
+</head>
+<body>
+    <div class="container">
+        <form action="visualisation-carte.html" method="GET">
+          <!-- TOP of the form -->
+          <div class="row">
+            <div class="col">
+              <h4>Age du conducteur</h4>
+              <input type="text" id="age">
+            </div>
+            <div class="col">
+              <h4>Ville</h4>
+              <input type="text" id="ville">
+            </div>
+            <div class="col">
+                <div class="row-half">
+                  <h4>Latitude et longitude</h4>
+                  <div class="input-group">
+                    <div class="row-third">
+                    <input type="text" id="latitude" name="latitude" placeholder="Latitude">
+                  </div>
+                    <div class="row-third">
+                      <input type="text" id="longitude" name="longitude" placeholder="longitude">
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="col">
+              <h4>Date</h4>
+              <div class="input-group">
+                <input type="date" id="date" placeholder="DD">
+                <!-- <input type="time" id="month" placeholder="MM"> -->
+              </div>
+            </div>
+            <div class="col">
+            <h4>Condition atmosphérique</h4>
+            <div class="input-group">
+          <select id="conditionAtmospherique">
+          </select>
+      </div>
+      </div>
+      <div class="col">
+            <h4>Luminosité</h4>
+            <div class="input-group">
+          <select id="luminosite">
+          </select>
+      </div>
+      </div>
+      <div class="col">
+            <h4>État de la route</h4>
+            <div class="input-group">
+          <select id="etatRoute">
+      
+          </select>
+      </div>
+      </div>
+      <div class="col">
+            <h4>Sécurité</h4>
+            <div class="input-group">
+          <select id="securite">
+          </select>
+      </div>
+      </div>
+          </div>
+        </form>
+      </div>
+    <!-- bouton validation form -->
+    <div id="buttonSubmit">
+      <button type="submit" id="buttonValid">Valider</button>
+      <button type="button" id="buttonReset">Reset</button>
+      <!-- <button type="submit" id="buttonCluster">Cluster</button> -->
+    </div>
+    </form>
+    <div id="map-container" class="container">
+        <div id="map"></div>
+      </div>
+  </div>      
+</div>
+</body>
+<script src="js/visualisationMap.js"></script>
+<!-- <script src="js/prediction-cluster.js"></script> -->
+</html>
+
+
+
